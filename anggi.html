@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Latihan Pemweb </title> 
+	</head>
+	<body>
+		<h2> Latihan Pemweb Files </h2>
+		<p>
+		<button onclick = "playVid()" type = "button" > play video </button>
+		<button onclick = "pauseVid()" type = "button" > pause video </button>
+		</p>
+		<video id = "myvideo" width="560" height="280"> 
+			<source src = "video.mp4" type = "video/mp4">
+		</video>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/hjm5C4wRTnM" title="YouTube video player" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</body>
+	<script>
+	var vid = document.getElementById("myvideo");
+	
+	function playVid() {
+		vid.play();
+		vid.load = true;
+	}
+	function pauseVid() {
+		vid.pause();
+	}
+	</script>
+</html>
